@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "likesufi",
+  "version": "1.0",
+
+  "icons": {
+    "48": "icons/like-sufi-48.png",
+    "32": "icons/like-sufi-32.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "likesufi@example.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://m.facebook.com/SufiDesigns.MR/*"],
+      "js": ["page.js"]
+    },
+    {
+      "matches": ["*://m.facebook.com/alaa.sufi9*"],
+      "js": ["alaa.js"]
+    }
+
+  ]
+
+}
